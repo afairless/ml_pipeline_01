@@ -1,0 +1,14 @@
+# local vocabulary work product — never committed
+.scrub/
+.port-staging/
+
+# environment and tooling
+.pixi/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.pyright/
+
+# runtime output — leading slash so tests/golden/baseline/output/ stays tracked
+/output/
