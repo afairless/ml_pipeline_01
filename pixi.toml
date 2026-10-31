@@ -15,7 +15,7 @@ scipy = ">=1.12,<2"
 scikit-learn = ">=1.4,<2"
 
 [feature.dev.dependencies]
-pytest = ">=8.0,<9"
+pytest = ">=9.0.3,<10"
 hypothesis = ">=6.100,<7"
 ruff = ">=0.5,<1"
 pyright = ">=1.1.380,<2"
