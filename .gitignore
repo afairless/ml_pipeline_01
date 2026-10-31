@@ -4,11 +4,22 @@
 
 # environment and tooling
 .pixi/
+.venv/
 __pycache__/
 *.py[cod]
+*.egg-info/
 .pytest_cache/
 .ruff_cache/
 .pyright/
+.hypothesis/
+.coverage
+.coverage.*
+htmlcov/
+build/
+dist/
+
+# editor and operating-system files
+.DS_Store
 
 # runtime output — leading slash so tests/golden/baseline/output/ stays tracked
 /output/

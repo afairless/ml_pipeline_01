@@ -1,0 +1,32 @@
+[project]
+name = "ml-pipeline-template"
+version = "0.1.0"
+description = "A reusable batch machine-learning pipeline template."
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+extend-exclude = [".pixi", ".port-staging", ".scrub", "docs", "output"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP"]
+
+[tool.pyright]
+include = ["."]
+exclude = [
+    ".pixi",
+    ".port-staging",
+    ".scrub",
+    "docs",
+    "output",
+    "tests/golden/baseline",
+]
+pythonVersion = "3.12"
+typeCheckingMode = "basic"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-ra"
