@@ -1,0 +1,5 @@
+#!/bin/sh
+# Reject a commit whose staged content or path names use denied vocabulary.
+# Installation is per clone: git config core.hooksPath .githooks
+set -eu
+exec pixi run python scripts/scrub_repo.py --staged
