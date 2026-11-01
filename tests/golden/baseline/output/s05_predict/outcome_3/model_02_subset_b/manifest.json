@@ -1,0 +1,44 @@
+{
+  "artifacts": [
+    {
+      "filename": "model_02_subset_b_train_predictions.parquet",
+      "logical_name": "train_predictions",
+      "partition": "train"
+    },
+    {
+      "filename": "model_02_subset_b_train_predictions.csv",
+      "logical_name": "train_predictions",
+      "partition": "train"
+    },
+    {
+      "filename": "model_02_subset_b_valid_predictions.parquet",
+      "logical_name": "valid_predictions",
+      "partition": "valid"
+    },
+    {
+      "filename": "model_02_subset_b_valid_predictions.csv",
+      "logical_name": "valid_predictions",
+      "partition": "valid"
+    },
+    {
+      "filename": "model_02_subset_b_test_predictions.parquet",
+      "logical_name": "test_predictions",
+      "partition": "test"
+    },
+    {
+      "filename": "model_02_subset_b_test_predictions.csv",
+      "logical_name": "test_predictions",
+      "partition": "test"
+    }
+  ],
+  "manifest_kind": "predictions",
+  "model_name": "model_02_subset_b",
+  "outcome": "outcome_3",
+  "partitions": [
+    "train",
+    "valid",
+    "test"
+  ],
+  "schema_version": 1,
+  "stage": "s05_predict"
+}

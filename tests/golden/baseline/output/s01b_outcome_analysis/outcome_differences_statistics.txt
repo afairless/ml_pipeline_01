@@ -1,0 +1,8 @@
+Outcome difference statistics
+=============================
+rows: 420
+comparisons: 2
+
+difference                               count          mean           std           min        median           max
+outcome_1_minus_outcome_2                  420      0.014946      0.627110     -1.441893      0.040792      1.480893
+outcome_3_minus_outcome_4                  420      0.041272      0.817470     -2.453059      0.383847      1.158113

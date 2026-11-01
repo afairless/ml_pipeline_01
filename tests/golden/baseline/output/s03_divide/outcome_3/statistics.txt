@@ -1,0 +1,14 @@
+Split statistics
+================
+outcome: outcome_3
+train_end_date: 2024-01-01
+test_start_date: 2024-07-01
+rows: 420
+train_rows: 290
+valid_rows: 91
+test_rows: 39
+
+partition     rows       start         end          mean           std           min        median           max
+train          290  2022-06-01  2023-12-31      0.067092      0.586939     -1.685873      0.110915      1.061216
+valid           91  2024-01-02  2024-06-30     -0.114344      0.565477     -1.539852      0.002571      0.934820
+test            39  2024-07-02  2024-09-16      0.443414      0.367545     -0.564154      0.535856      0.947091

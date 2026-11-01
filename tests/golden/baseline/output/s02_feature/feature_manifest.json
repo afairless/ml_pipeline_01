@@ -1,0 +1,38 @@
+{
+  "artifacts": [
+    {
+      "filename": "feature_df.parquet",
+      "logical_name": "feature_df",
+      "partition": null
+    },
+    {
+      "filename": "feature_df_head.csv",
+      "logical_name": "feature_head_df",
+      "partition": null
+    }
+  ],
+  "categorical_columns": [],
+  "feature_columns": [
+    "feature_1",
+    "feature_2",
+    "feature_3",
+    "feature_4",
+    "feature_5",
+    "feature_6",
+    "feature_7",
+    "feature_8"
+  ],
+  "key_columns": [
+    "case_id",
+    "case_date"
+  ],
+  "manifest_kind": "feature",
+  "metadata_columns": [],
+  "n_rows": 420,
+  "partitions": [
+    "train",
+    "valid",
+    "test"
+  ],
+  "schema_version": 1
+}

@@ -59,6 +59,7 @@ from tests.golden.paths import (
     relative_output_path,
 )
 from tests.golden.runner import (
+    DEMO_RNG_SEED,
     SOURCE_FILENAME,
     run_demo_pipeline,
     seed_demo_source,
@@ -69,6 +70,7 @@ __all__ = [
     "ARTIFACT_ALIASES",
     "BASELINE_OUTPUT_ROOT",
     "BASELINE_ROOT",
+    "DEMO_RNG_SEED",
     "GOLDEN_ARTIFACT_ALIASES",
     "GOLDEN_PACKAGE_ROOT",
     "OUTPUT_ROOT",

@@ -1,0 +1,12 @@
+{
+    "original_target_rmse": 0.4717031404619308,
+    "model_target_rmse": 0.4717031404619308,
+    "original_target_r2": 0.14836185206194186,
+    "model_target_r2": 0.14836185206194186,
+    "original_target_mean_ae": 0.39192048873421675,
+    "model_target_mean_ae": 0.39192048873421675,
+    "original_target_median_ae": 0.34385666279087757,
+    "model_target_median_ae": 0.34385666279087757,
+    "original_target_d2_absolute_error": 0.10676815961897013,
+    "model_target_d2_absolute_error": 0.10676815961897013
+}

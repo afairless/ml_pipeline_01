@@ -19,6 +19,7 @@ from contextlib import contextmanager
 from pathlib import Path
 
 import matplotlib
+import numpy as np
 
 matplotlib.use("Agg", force=True)
 
@@ -31,6 +32,15 @@ from tests.golden.paths import PROJECT_ROOT
 
 SOURCE_FILENAME = "source_table_1.parquet"
 """Committed demo input filename copied into each temporary project root."""
+
+DEMO_RNG_SEED = CONFIG.demo_seed
+"""Seed applied to the global ``numpy`` RNG before each demo run.
+
+The feature policies draw their substitutions from the global ``numpy`` RNG,
+so a run is reproducible only when that RNG is seeded immediately before the
+first draw. The test session seeds it once as well; seeding here makes a
+standalone capture or a maintenance command equally reproducible.
+"""
 
 
 def seed_demo_source(
@@ -72,6 +82,7 @@ def run_demo_pipeline(project_root: Path) -> Path:
     """
     root = Path(project_root)
     seed_demo_source(root)
+    np.random.seed(DEMO_RNG_SEED)
     context = build_context(config=CONFIG, project_root=root)
     output_root = root / "output"
     s01_outcome(context, output_root)
@@ -97,6 +108,7 @@ run_pipeline_to_output = run_demo_pipeline
 
 
 __all__ = [
+    "DEMO_RNG_SEED",
     "SOURCE_FILENAME",
     "run_demo_pipeline",
     "run_pipeline_to_output",

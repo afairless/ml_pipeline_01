@@ -1,0 +1,109 @@
+{
+  "artifacts": [
+    {
+      "filename": "train_key_df.parquet",
+      "logical_name": "train_key_df",
+      "partition": null
+    },
+    {
+      "filename": "train_key_df.csv",
+      "logical_name": "train_key_df",
+      "partition": null
+    },
+    {
+      "filename": "train_feature_df.parquet",
+      "logical_name": "train_feature_df",
+      "partition": null
+    },
+    {
+      "filename": "train_feature_df.csv",
+      "logical_name": "train_feature_df",
+      "partition": null
+    },
+    {
+      "filename": "valid_key_df.parquet",
+      "logical_name": "valid_key_df",
+      "partition": null
+    },
+    {
+      "filename": "valid_key_df.csv",
+      "logical_name": "valid_key_df",
+      "partition": null
+    },
+    {
+      "filename": "valid_feature_df.parquet",
+      "logical_name": "valid_feature_df",
+      "partition": null
+    },
+    {
+      "filename": "valid_feature_df.csv",
+      "logical_name": "valid_feature_df",
+      "partition": null
+    },
+    {
+      "filename": "test_key_df.parquet",
+      "logical_name": "test_key_df",
+      "partition": null
+    },
+    {
+      "filename": "test_key_df.csv",
+      "logical_name": "test_key_df",
+      "partition": null
+    },
+    {
+      "filename": "test_feature_df.parquet",
+      "logical_name": "test_feature_df",
+      "partition": null
+    },
+    {
+      "filename": "test_feature_df.csv",
+      "logical_name": "test_feature_df",
+      "partition": null
+    },
+    {
+      "filename": "feature_importances.parquet",
+      "logical_name": "feature_importances",
+      "partition": null
+    },
+    {
+      "filename": "feature_importances.csv",
+      "logical_name": "feature_importances",
+      "partition": null
+    },
+    {
+      "filename": "model.json",
+      "logical_name": "model",
+      "partition": null
+    },
+    {
+      "filename": "model_pretty.json",
+      "logical_name": "model",
+      "partition": null
+    },
+    {
+      "filename": "model.txt",
+      "logical_name": "model",
+      "partition": null
+    }
+  ],
+  "best_parameters": {},
+  "estimator": "xgboost",
+  "feature_colnames": [
+    "feature_1",
+    "feature_2"
+  ],
+  "manifest_kind": "model",
+  "model_name": "model_00_noise_0",
+  "objective": "reg:absoluteerror",
+  "outcome": "outcome_1",
+  "outcome_colname": "outcome_1",
+  "partitions": [
+    "train",
+    "valid",
+    "test"
+  ],
+  "schema_version": 2,
+  "stage": "s04_train",
+  "target_transform": "identity",
+  "task": "regression"
+}
